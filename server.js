@@ -33,7 +33,7 @@ app.post('/send', (req, res) => {
     const mailOptions = {
         from: email,
         to: process.env.GMAIL_USER, // Your Gmail address
-        subject: `Contact form submission from ${name}`,
+        subject: `Contact from ${name}`,
         text: message,
     };
 
